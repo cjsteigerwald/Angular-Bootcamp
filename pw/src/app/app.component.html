@@ -1,8 +1,9 @@
 <h1>Password Generator</h1>
 
+<!-- $event.target! - An exclamation sign means the possibility of null -->
 <div>
   <label for="">Enter Length</label>
-  <input type="text"/>
+  <input class="input" (input)="onChangeLength($event.target!)" />
 </div>
 
 <div>
