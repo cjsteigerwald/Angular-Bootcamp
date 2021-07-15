@@ -1,0 +1,4 @@
+/* if ng-content select empty remove padding */
+div.ui.icon.header:empty {
+  display: none;
+}
