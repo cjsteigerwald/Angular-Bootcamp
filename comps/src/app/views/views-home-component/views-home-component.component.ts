@@ -13,6 +13,19 @@ export class ViewsHomeComponentComponent implements OnInit {
     { value: 50, label: 'Reviews'},
   ];
 
+  items = [
+    {
+      image: '/assets/images/couch.jpeg',
+      title: 'Couch',
+      description: 'This is a fantastic to sit on'
+    },
+    {
+      image: '/assets/images/dresser.jpeg',
+      title: 'Dresser',
+      description: 'This is a great dress to put stuff on'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
