@@ -20,15 +20,15 @@ export class AuthHttpInterceptor implements HttpInterceptor {
       withCredentials: true
     });
     return next.handle(modifiedReq)
-    .pipe(
-      tap(val => {
-        if (val.type === HttpEventType.Sent) {
-          console.log('Request was sent to server');
-        }
-        if (val.type === HttpEventType.Response) {
-          console.log('Got a respone from the API', val);
-        }
-      })
-    );
+    // .pipe(
+    //   tap(val => {
+    //     if (val.type === HttpEventType.Sent) {
+    //       console.log('Request was sent to server');
+    //     }
+    //     if (val.type === HttpEventType.Response) {
+    //       console.log('Got a respone from the API', val);
+    //     }
+    //   })
+    // );
   }
 }
