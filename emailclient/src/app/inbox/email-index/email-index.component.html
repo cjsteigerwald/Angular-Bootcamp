@@ -1,11 +1,11 @@
-<div class="us celled list">
+<div class="ui celled list">
   <div *ngFor="let email of emails" class="item">
     <a [routerLink]="email.id" routerLinkActive="active">
       <div class="content">
-        <div class="header">
+        <div class="header trim">
           {{ email.subject }}
         </div>
-        <p>
+        <p class="trim">
           {{ email.from }}
         </p>
         <hr>
