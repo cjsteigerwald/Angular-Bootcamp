@@ -7,9 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ItemListComponent implements OnInit {
   @Input() items = [] as any;
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
+
+  ngOnInit(): void {}
 
 }
